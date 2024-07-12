@@ -30,16 +30,76 @@ Go to Power Pages Management -> Web Pages -> Localized Content -> Home
 
 ![image](https://github.com/user-attachments/assets/ad157af8-2b0f-43b3-b121-da4dee99e075)
 
+
 In the **General** tab add in the HTML code in the **Content** section as shown. 
 
 
 ![Image](https://github.com/user-attachments/assets/3ba441b3-2fc5-44b9-be53-8feca1b8a284)
 
+```
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2" class="heading">TIA Worksheet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Description</td>
+        <td><select id="descriptionDropdown"></select></td>
+      </tr>
+      <tr>
+        <td>Units (Input Value)</td>
+        <td><input type="text" id="InputUnits" pattern="[0-9]*" title="Please enter units" required />
+        <label id="refUnit" style="font-style: italic;"></label>
+        <!-- <label id="unitsErrorMessage"> Error </label> -->
+        </td>
+      </tr>
+      <tr>
+        <td>Land Use Code</td>
+        <td><label id="landUseCodeLabel"></label></td>
+      </tr>
+      <tr>
+        <td>AM Peak</td>
+        <td><label id="AMPeak"></label></td>
+      </tr>
+      <tr>
+        <td>PM Peak</td>
+        <td><label id="PMPeak"></label></td>
+      </tr>
+      <tr>
+        <td>Weekend Peak (Sat.)</td>
+        <td><label id="WeekendPeak"></label></td>
+      </tr>
+      <tr>
+        <td>Weekend Peak (Sun.)</td>
+        <td><label id="SundayPeak"></label></td>
+      </tr>
+      <tr>
+        <td>Daily Total</td>
+        <td><label id="DailyPeak"></label></td>
+      </tr>
+      <tr>
+        <td>Result</td>
+        <td><label id="result" class="result-text"></label></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="button-cell"><!-- Button for showing results --><button id="loadDataButton" class="show-results-button">Show Result</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div data-component-theme="portalThemeColor7" id="i2753q" class="row sectionBlockLayout text-left" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div id="i6tfgh" class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div id="ivapqp" class="col-md-12 columnBlockLayout" style="word-break: break-word; flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;"></div></div>
+</div>
+
+```
 
 Add Custom Javascript with the logic in the Advanced tab. 
 
+![image](https://github.com/user-attachments/assets/0ef8c581-9693-462e-98f5-c01b8d4fe34e)
 
-![Image](https://github.com/user-attachments/assets/71e2b0e0-949c-4448-a233-22201f031314)
 
 ## Sync and Preview
 After Saving changes always apply Sync from the Edit mode and Preview. 
